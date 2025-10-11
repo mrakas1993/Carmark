@@ -76,3 +76,171 @@ button{
 .phone>a:last-child{
     margin-bottom: 0;
 }
+h1{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 52px;
+    line-height: 119%;
+    color: #000;
+    max-width: 672px;
+    margin-bottom: 20px;
+}
+.header-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 160%;
+    color: #000;
+    max-width: 600px;
+    margin-bottom: 44px;
+}
+.header-info>button{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    color: #fff;
+    padding: 18px 54.5px;
+    background: #f50e30;
+    border-radius: 8px;
+    margin-bottom: 151px;
+}
+.header-info{
+    position: relative;
+}
+.header-info>img{
+    position: absolute;
+    top: 0;
+    right: -123px;
+}
+.buy{
+    background: #f4f6f8;
+    padding-top: 129px;
+    padding-bottom: 119px;
+}
+.title{
+    font-family: "Inter", sans-serif;
+    font-weight: 800;
+    font-size: 44px;
+    line-height: 123%;
+    color: #000;
+    max-width: 1014px;
+}
+.center{
+    text-align: center;
+}
+.buy-info{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.buy-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 28px;
+}
+.buy-info>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    background: #f50e30;
+    border-radius: 8px;
+    padding: 14px 40px;
+    margin-bottom: 40px;
+}
+.buy-box{
+    display: flex;
+    justify-content: space-between;
+}
+.buy-item{
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 21px 54px 91px 32px;
+    position: relative;
+}
+.buy-item>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 122%;
+    color: #000;
+    margin-bottom: 24px;
+}
+.buy-item>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 175%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 301px;
+}
+.buy-item>img{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+}
+.buy-item>.brelok{
+    right: 30px;
+    bottom: 18px;
+}
+.buy-item>.fer{
+    right: 10.61px;
+}
+.buy-item>.money{
+    right: 16px;
+    bottom: 17px;
+}
+.about{
+    display: flex;
+}
+.about-img{
+    flex-basis: 47.29%;
+    background: url('../img/about.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+.about-info{
+    flex-basis: 52.71%;
+    padding: 52px 0 50px 100px;
+}
+.about-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 133%;
+    color: #000;
+    max-width: 524px;
+    margin-top: 12px;
+    margin-bottom: 24px;
+}
+.about-info>ul>li{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 140%;
+    color: #000;
+    margin-bottom: 38px;
+    margin-left: 76px;
+    position: relative;
+}
+.about-info>ul>li:last-child{
+    margin-bottom: 19px;
+}
+.about-info>ul>li::before{
+    position: absolute;
+    content: '';
+    width: 52px;
+    height: 52px;
+    background: #f50e30;
+    border-radius: 100%;
+    left: -76px;
+    top: -15px;
+}
