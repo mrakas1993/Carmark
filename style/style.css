@@ -16,9 +16,10 @@ ul,ol{
 }
 button{
     border: 0;
+    cursor: pointer;
 }
 .container{
-    max-width: 1280px;
+    max-width: 1281px;
     margin: 0 auto;
 }
 .header-menu{
@@ -231,16 +232,204 @@ h1{
     margin-left: 76px;
     position: relative;
 }
-.about-info>ul>li:last-child{
-    margin-bottom: 19px;
-}
+
 .about-info>ul>li::before{
     position: absolute;
     content: '';
     width: 52px;
     height: 52px;
-    background: #f50e30;
+    background-color: #f50e30;
+    background-image: url("../img/about-car.svg");
+    background-repeat: no-repeat;
+    background-size: 36px;
+    background-position: center;
     border-radius: 100%;
     left: -76px;
     top: -15px;
+}
+.about-info>ul>li:nth-child(2)::before{
+    background-image: url("../img/about-achiv.svg");
+}
+.about-info>ul>li:last-child::before{
+    background-image: url("../img/about-car2.svg");
+}
+.about-info>div{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #000;
+    max-width: 448px;
+    padding: 9px 17px;
+    border: 3px solid rgba(250, 0, 44, 0.15);
+    border-radius: 10px;
+    margin-bottom: 32px;
+}
+.about-info>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    border-radius: 8px;
+    background: #f50e30;
+    padding: 14px 40px;
+}
+.buyCars{
+    background: #f4f6f8;
+    padding: 100px 0;
+}
+.buyCars>.container>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 117%;
+    color: #000;
+    margin-top: 20px;
+    margin-bottom: 40px;
+}
+.mySwiper>.swiper-wrapper>.swiper-slide{
+    box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    background: #fff;
+    border-radius: 20px;
+    padding: 20px 24px;
+    box-sizing: border-box;
+}
+.swiper-slide>img{
+    border-radius: 12px;
+    width: 363px;
+    height: 261px;
+}
+.swiper-slide>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 150%;
+    color: #000;
+    margin-top: 24px;
+    margin-bottom: 16px;
+}
+.stats{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin-bottom: 16px;
+}
+.stats:last-child{
+    margin-bottom: 24px;
+}
+.stats-dote{
+    border-bottom: 1px dashed #c1c1c1;
+    flex-grow: 1;
+    margin: 0 8px;
+    height: 1px;
+    margin-bottom: 3px;
+}
+.stats-name{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: rgba(0, 0, 0, 0.5);
+}
+.stats-value{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 120%;
+    text-align: right;
+    color: #000;
+}
+.price{
+    display: flex;
+    justify-content: space-between;
+}
+.price-info{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 125%;
+    color: #000;
+    max-width: 173px;
+}
+.price-second{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 100%;
+    text-align: right;
+    color: #000;
+}
+.price-key{
+    font-family: "Inter", sans-serif;
+    font-weight: 900;
+    font-size: 24px;
+    line-height: 100%;
+    color: #fa002c;
+}
+.price{
+    margin-bottom: 16px;
+}
+.price:last-child{
+    margin-bottom: 24px;
+}
+.swiper-slide>button{
+    font-family: "SF Pro Display", sans-serif;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 140%;
+    color: #fff;
+    border-radius: 8px;
+    background: #fa002c;
+    padding: 14px 104px;
+}
+.swiper-pagination{
+    bottom: -4px !important;
+}
+.swiper-wrapper{
+    padding-bottom: 28px;
+}
+.slider-btn{
+    position: relative;
+}
+.left,.right{
+    position: absolute;
+    z-index: 1000;
+    top: 329px;
+}
+.left{
+    left: -53px;
+}
+.right{
+    right: -53px;
+}
+.left>img,.right>img{
+    cursor: pointer;
+}
+.swiper-pagination-bullet-active{
+    background: #fa002c;
+}
+.swiper-pagination-bullet{
+    width: 100px;
+    height: 4px;
+    border-radius: 0;
+}
+.process{
+    padding: 100px 0;
+}
+summary{
+    position: relative;
+}
+summary::marker{
+    position: absolute;
+    right: 0;
+}
+summary::before {
+    content: 'A'; /* Стрелка вправо */
+    position: absolute;
+    left: 0;
+    transition: transform 0.2s ease; /* Анимация поворота */
+}
+summary::-webkit-details-marker {
+    display: none; /* Скрываем маркер в браузерах на основе WebKit */
 }
