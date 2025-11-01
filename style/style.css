@@ -18,6 +18,11 @@ button{
     border: 0;
     cursor: pointer;
 }
+summary {
+  cursor: pointer;
+  list-style: none; 
+  position: relative;
+}
 .container{
     max-width: 1281px;
     margin: 0 auto;
@@ -417,19 +422,96 @@ h1{
 .process{
     padding: 100px 0;
 }
-summary{
-    position: relative;
+/* Пример deatails */
+/* details {
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  background-color: #f9f9f9;
+  width: 300px;
 }
-summary::marker{
-    position: absolute;
-    right: 0;
+
+summary {
+  font-weight: bold;
+  cursor: pointer;
+  list-style: none; 
+  position: relative;
+}
+summary>p{
+    padding-top: 10px;
 }
 summary::before {
-    content: 'A'; /* Стрелка вправо */
-    position: absolute;
-    left: 0;
-    transition: transform 0.2s ease; /* Анимация поворота */
+  content: "A";
+  margin-right: 5px;
+  transition: transform 0.3s ease;
+  position: absolute;
+  right: 0;
 }
-summary::-webkit-details-marker {
-    display: none; /* Скрываем маркер в браузерах на основе WebKit */
+
+details[open] summary::before {
+  transform: rotate(90deg);
+} */
+.process>.container>details{
+    padding: 32px 0 40px 109px;   
 }
+.bt{
+    border-top: 1px solid rgba(0, 0, 0, 0.3);
+    margin-top: 40px;
+}
+.process>.container>details>summary{
+    display: flex;
+    align-items: center;
+}
+.process>.container>details>summary>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 700;
+    font-size: 80px;
+    line-height: 110%;
+    color: #f50e30;
+}
+.process>.container>details>summary>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 600;
+    font-size: 36px;
+    line-height: 122%;
+    color: #000;
+    margin-left: 122px;
+}
+.process>.container>details>summary::before {
+  content: "";
+  background-image: url('../img/arrow-down.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  width: 64px;
+  height: 64px;
+  transition: transform 0.5s ease;
+  position: absolute;
+  right: 0;
+}
+.process>.container>details[open] summary::before {
+  transform: rotate(180deg);
+}
+.process-info{
+    display: flex;
+    justify-content: space-between;
+    max-width: 954px;
+    margin-left: 326px;
+    margin-top: 24px;
+}
+.process-info>h3{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 120%;
+    color: #000;
+    
+}
+.process-info>p{
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 156%;
+    color: rgba(0, 0, 0, 0.8);
+    max-width: 520px;
+}
+
