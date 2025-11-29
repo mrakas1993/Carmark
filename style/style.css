@@ -24,7 +24,8 @@ summary {
   position: relative;
 }
 .container{
-    max-width: 1281px;
+    max-width: 1249px;
+    padding: 0 16px;
     margin: 0 auto;
 }
 .header-menu{
@@ -660,6 +661,7 @@ details[open] summary::before {
     width: 411px;
     height: 496px;
     box-shadow: 0 2px 16px 0 rgba(0, 0, 0, 0.08);
+    border-radius: 20px;
     
 }
 .team-item>img{
@@ -918,4 +920,192 @@ footer{
 }
 .map>iframe{
     border-radius: 18px;
+}
+.footer-bottom{
+    margin-top: 55px;
+}
+.footer-bottom>a{
+    font-family: "Inter", sans-serif;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 175%;
+    text-decoration: underline;
+    color: rgba(0, 0, 0, 0.3);
+    margin-right: 127px;
+}
+.footer-bottom>a:last-child{
+    margin-right: 0;
+}
+/* 1200,1024,992,768,540,480,375,360,320 */
+@media (max-width:1200px) {
+
+    .header-info>img{
+        width: 600px;
+        right: -14px;
+    }
+    .right{
+        right: -15px;
+    }
+    .left{
+        left: -15px;
+    }
+    .buy-item{
+        padding-left: 18px;
+        padding-right: 58px;
+    }
+    .swiper-slide>button{
+        padding-left: 85px;
+        padding-right: 85px;
+    }
+    .swiper-slide>img{
+        width: 324px;
+        height: 211px;
+    }
+    .guaranties-item{
+        padding: 30px 24px;
+    }
+    .advantage1{
+        padding: 40px 20px 40px 20px;
+    }
+    .advantage2{
+        padding: 40px 18px 40px 18px;
+    }
+    .team-item{
+        width: 376px;
+    }
+    .calc-info{
+        padding-right: 0;
+    }
+}
+@media (max-width:1024px) {
+    .menu>li>a{
+        font-size: 14px;
+    }
+    h1{
+        font-size: 46px;
+    }
+    .header-info>p{
+        font-size: 18px;
+        max-width: 394px;
+    }
+    .about-info>p{
+        font-size: 20px;
+    }
+    .about-info>div{
+        max-width: 380px;
+    }
+    .swiper-slide>img{
+        width: 266px;
+        height: 170px;
+    }
+    .swiper-slide>h3{
+        text-align: center;
+    }
+    .price-info{
+        font-size: 14px;
+    }
+    .price-second{
+        font-size: 14px;
+    }
+    .price{
+        align-items: center;
+    }
+    .price-key{
+        font-size: 14px;
+    }
+    .swiper-slide>button{
+        padding-left: 56px;
+        padding-right: 56px;
+    }
+    .guaranties{
+        justify-content: space-evenly;
+    }
+    .advantage1{
+        flex-basis: 100%;
+    }
+    .advantage2{
+        flex-basis: 100%;
+    }
+    .team-box{
+        justify-content: space-evenly;
+    }
+    .consalt-box{
+        /* flex-direction: column;
+        align-items: center; */
+    }
+    .calc-info>h3{
+        font-size: 32px;
+    }
+    .calc-info>ul>li{
+        max-width: 426px;
+    }
+    .form{
+        border-top-right-radius:0;
+        border-bottom-right-radius:0;
+    }
+    .calc-info{
+        border-top-left-radius:0;
+        border-bottom-left-radius:0;
+    }
+}
+@media (max-width:375px){
+    .menu{
+        display: none;
+    }
+    .phone{
+        display: none;
+    }
+    .header-menu{
+        padding-bottom: 34px;
+    }
+    .header-info>img{
+        width: 343px;
+        height: 177px;
+        top: 100px;
+        left: 0;
+    }
+    h1{
+        font-size: 32px;
+        text-align: center;
+        margin-bottom: 229px;
+    }
+    .header-info>p{
+        font-size: 16px;
+        text-align: center;
+    }
+    .header-info>button{
+        font-size: 19px;
+        padding: 16px 92px;
+        margin-bottom: 80px;
+    }
+    .buy{
+        padding:64px 0;
+    }
+    .title{
+        font-size: 28px;
+        text-align: center;
+    }
+    .buy-info>p{
+        margin-top: 20px;
+        font-size: 16px;
+        text-align: center;
+    }
+    .buy-box{
+        flex-direction: column;
+    }
+    .buy-item{
+        padding: 32px 20px;
+        margin-bottom: 12px;
+    }
+    .buy-item>.brelok{
+        width: 72px;
+        height: 63px;
+        top: 17px;
+        left: 20px;
+    }
+    .buy-item>h3{
+        margin-left: 120px;
+        font-size: 24px;
+        margin-bottom: 16px;
+    }
 }
